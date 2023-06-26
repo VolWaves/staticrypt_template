@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="staticrypt-html">
+    <head>
+        <meta charset="utf-8" />
+        <title>/*[|template_title|]*/0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- do not cache this page -->
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
+
+        <style>
+			:root {
+				--var-primary-color: #125592;
+			}
+            .staticrypt-hr {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border: 0;
+                border-top: 1px solid #eee;
+            }
+
+            .staticrypt-page {
+                width: 360px;
+                padding: 22vh 0 0;
+                margin: auto;
+                box-sizing: border-box;
+            }
+
+            .staticrypt-form {
+                position: relative;
+                z-index: 1;
+                background: #ffffff27;
+				border-radius: 20px!important;
+                max-width: 360px;
+                margin: 0 auto 100px;
+                padding: 45px;
+                text-align: center;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            }
+
+            .staticrypt-form input[type="password"] {
+                outline: 0;
+                background: #00000072;
+				color: #dbdbdb;
+                width: 100%;
+                border: 2px solid #262626;
+				border-radius: 50vh!important;
+                margin: 0 0 15px;
+                padding: 15px;
+                box-sizing: border-box;
+                font-size: 14px;
+				text-align: center;
+            }
+
+            .staticrypt-form .staticrypt-decrypt-button {
+                text-transform: uppercase;
+                outline: 0;
+				border-radius: 50vh!important;
+                background: var(--var-primary-color);
+                width: 100%;
+                border: 0;
+                padding: 15px;
+                color: #ffffff;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            .staticrypt-form .staticrypt-decrypt-button:hover,
+            .staticrypt-form .staticrypt-decrypt-button:active,
+            .staticrypt-form .staticrypt-decrypt-button:focus {
+                background: var(--var-primary-color);
+                filter: brightness(92%);
+            }
+
+            .staticrypt-logo {
+                height: 6em;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgdmlld0JveD0nMCAwIDYwMiA1NjYnPgo8cGF0aCBmaWxsPScjOTE5MTkxJyBkPScKICBNIDQ0NC43MiA1OS4wNAogIEMgNDQ3LjU3IDU0LjU0IDQ1MC40MyA1My45OCA0NTUuOTAgNTMuOTkKICBRIDQ5Ni44MiA1NC4wMyA1MzcuNzMgNTMuOTcKICBDIDU0Ni4yMSA1My45NiA1NTMuNjggNTIuODcgNTU0Ljg0IDYyLjM3CiAgUSA1NTUuMTcgNjUuMDcgNTUzLjgwIDY4LjgxCiAgUSA1MzMuNTUgMTIzLjk5IDUxMy41NyAxNzkuMjgKICBDIDUxMS41MCAxODUuMDEgNTA5LjA4IDE4OS4wMCA1MDMuNjkgMTg4Ljk5CiAgUSA0NjAuMTQgMTg4Ljk3IDQxNi41OSAxODkuMDQKICBRIDQwOS4xOCAxODkuMDUgNDA2LjEwIDE4Ny41NQogIFEgMzk4Ljc0IDE4My45OCA0MDIuNTQgMTczLjYyCiAgUSA0MjMuMTkgMTE3LjQwIDQ0My4wOSA2Mi4zNQogIFEgNDQzLjcyIDYwLjYxIDQ0NC43MiA1OS4wNAogIFonCi8+CjxwYXRoIGZpbGw9JyM5MTkxOTEnIGQ9JwogIE0gMTM5LjI1IDUzLjkzCiAgQyAxNDMuNzggNTMuOTMgMTQ3LjMzIDU4LjExIDE0OC43NiA2Mi4wNAogIFEgMjI5LjUxIDI4NC4yNiAzMTAuNDcgNTA2LjQxCiAgQyAzMTQuNDMgNTE3LjI5IDMwOS4xNSA1MjEuOTkgMjk4LjYxIDUyMi4wMAogIFEgMjU1LjUwIDUyMi4wMCAyMTIuMzggNTIyLjAwCiAgQyAyMDcuMzkgNTIyLjAwIDIwMi42NSA1MjAuNDggMjAwLjk1IDUxNS44MAogIFEgMTI2LjA3IDMxMC4xNyA1MS4yNCAxMDQuNTAKICBRIDQ1LjMyIDg4LjI0IDM5LjI5IDcyLjAxCiAgQyAzNi44NCA2NS40MCAzNC43NCA1OC45OSA0MS41OSA1NS4yOQogIFEgNDQuMDIgNTMuOTcgNDguNjUgNTMuOTgKICBRIDkzLjk2IDU0LjAyIDEzOS4yNSA1My45MwogIFonCi8+CjxwYXRoIGZpbGw9JyM5MTkxOTEnIGQ9JwogIE0gNDA1LjAzIDM4My40NQogIEMgMzk4LjUxIDM5Ny45NSAzNzcuNDcgMzk3LjE0IDM3Mi4wOCAzODIuMTAKICBRIDM3MS4wNSAzNzkuMjQgMzcxLjAzIDM3Mi42MgogIEMgMzcwLjk4IDM2MC4wOCAzNjkuNTEgMzQ0LjkxIDM3Mi41OCAzMzIuODAKICBDIDM4MC41OSAzMDEuMjUgNDAzLjUxIDI4MC4zOCA0MzUuNTAgMjc0LjQ3CiAgQyA0ODAuODYgMjY2LjA4IDUyNC40NiAyODguODkgNTM0LjcwIDMzNS45MwogIEMgNTM3LjEzIDM0Ny4wOCA1MzYuMDMgMzYwLjY1IDUzNS45OSAzNzIuNDEKICBRIDUzNS45NiAzNzkuMTcgNTM0LjgxIDM4Mi4zMwogIEMgNTI5LjM4IDM5Ny4xNSA1MDguNDQgMzk3Ljg3IDUwMS45NiAzODMuNTAKICBRIDUwMC41MCAzODAuMjUgNTAwLjM3IDM3My43NAogIFEgNTAwLjE1IDM2Mi4zNCA1MDAuMjMgMzUwLjkyCiAgUSA1MDAuMjggMzQ0Ljc3IDQ5OS4xNiAzNDAuNjgKICBDIDQ5My4yOCAzMTkuMjEgNDc2LjcwIDMwOS42NCA0NTUuMzYgMzA4LjkxCiAgQyA0MzMuNDQgMzA4LjE3IDQxNC4yOSAzMTcuMDIgNDA3Ljg4IDMzOS4yMAogIFEgNDA2Ljc1IDM0My4xMSA0MDYuNzggMzQ4Ljk1CiAgUSA0MDYuODQgMzYxLjM4IDQwNi42MiAzNzMuODEKICBRIDQwNi41MSAzODAuMTcgNDA1LjAzIDM4My40NQogIFonCi8+CjxyZWN0IGZpbGw9JyM5MTkxOTEnIHg9JzM1MC4wMScgeT0nNDAyLjAwJyB3aWR0aD0nMjA0Ljk4JyBoZWlnaHQ9JzEyMC4wMCcgcng9JzE2LjA4Jy8+Cjwvc3ZnPg==");
+            }
+            .staticrypt-html {
+                height: 100%;
+            }
+
+            .staticrypt-body {
+                height: 100%;
+                margin: 0;
+            }
+
+            .staticrypt-content {
+				background-image: url('data:image/png;base64,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');
+                height: 100%;
+                margin-bottom: 1em;
+                font-family: "Arial", sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .staticrypt-instructions {
+                margin-top: -1em;
+                margin-bottom: 1em;
+				color: #dbdbdb;
+            }
+
+            .staticrypt-title {
+                font-size: 1.8em;
+                margin-bottom: 0.1em;
+            }
+			.staticrypt-inst {
+                font-size: 0.8em;
+				margin-top: 0.1em;
+			}
+            label.staticrypt-remember {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1em;
+				margin-left: .5em;
+                font-size: 0.8em;
+				color: #8a8a8a;
+            }
+
+            .staticrypt-remember input[type="checkbox"] {
+                transform: scale(1);
+                margin-right: 1em;
+            }
+
+            .hidden {
+                display: none !important;
+            }
+
+            .staticrypt-spinner-container {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .staticrypt-spinner {
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+                vertical-align: text-bottom;
+                border: 0.25em solid gray;
+                border-right-color: transparent;
+                border-radius: 50%;
+                -webkit-animation: spinner-border 0.75s linear infinite;
+                animation: spinner-border 0.75s linear infinite;
+                animation-duration: 0.75s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-name: spinner-border;
+            }
+
+            @keyframes spinner-border {
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+
+    <body class="staticrypt-body">
+        <div id="staticrypt_loading" class="staticrypt-spinner-container">
+            <div class="staticrypt-spinner"></div>
+        </div>
+
+        <div id="staticrypt_content" class="staticrypt-content hidden">
+            <div class="staticrypt-page">
+                <div class="staticrypt-form">
+					<div class="staticrypt-logo">
+
+					</div>
+                    <div class="staticrypt-instructions">
+                        <p class="staticrypt-title">/*[|template_title|]*/0</p>
+                        <p class="staticrypt-inst">/*[|template_instructions|]*/0</p>
+                    </div>
+
+                    <hr class="staticrypt-hr" />
+
+                    <form id="staticrypt-form" action="#" method="post">
+                        <input
+                            id="staticrypt-password"
+                            type="password"
+                            name="password"
+                            placeholder="/*[|template_placeholder|]*/0"
+                            autofocus
+                        />
+
+                        <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
+                            <input id="staticrypt-remember" type="checkbox" name="remember" />
+                            /*[|template_remember|]*/0
+                        </label>
+
+                        <input type="submit" class="staticrypt-decrypt-button" value="/*[|template_button|]*/0" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // these variables will be filled when generating the file - the template format is '/*[|variable_name|]*/0'
+            const staticryptInitiator = /*[|js_staticrypt|]*/ 0;
+            const templateError = "/*[|template_error|]*/0",
+                isRememberEnabled = /*[|is_remember_enabled|]*/ 0,
+                staticryptConfig = /*[|staticrypt_config|]*/ 0;
+
+            // you can edit these values to customize some of the behavior of StatiCrypt
+            const templateConfig = {
+                rememberExpirationKey: "staticrypt_expiration",
+                rememberPassphraseKey: "staticrypt_passphrase",
+                replaceHtmlCallback: null,
+                clearLocalStorageCallback: null,
+            };
+
+            // init the staticrypt engine
+            const staticrypt = staticryptInitiator.init(staticryptConfig, templateConfig);
+
+            // try to automatically decrypt on load if there is a saved password
+            window.onload = async function () {
+                const { isSuccessful } = await staticrypt.handleDecryptOnLoad();
+
+                // if we didn't decrypt anything on load, show the password prompt. Otherwise the content has already been
+                // replaced, no need to do anything
+                if (!isSuccessful) {
+                    // hide loading screen
+                    document.getElementById("staticrypt_loading").classList.add("hidden");
+                    document.getElementById("staticrypt_content").classList.remove("hidden");
+                    document.getElementById("staticrypt-password").focus();
+
+                    // show the remember me checkbox
+                    if (isRememberEnabled) {
+                        document.getElementById("staticrypt-remember-label").classList.remove("hidden");
+                    }
+                }
+            };
+
+            // handle password form submission
+            document.getElementById("staticrypt-form").addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                const password = document.getElementById("staticrypt-password").value,
+                    isRememberChecked = document.getElementById("staticrypt-remember").checked;
+
+                const { isSuccessful } = await staticrypt.handleDecryptionOfPage(password, isRememberChecked);
+
+                if (!isSuccessful) {
+                    alert(templateError);
+                }
+            });
+        </script>
+    </body>
+</html>
