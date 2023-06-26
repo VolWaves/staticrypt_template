@@ -1,5 +1,6 @@
 # Volwave staticrypt 加密模板
 
+![](assets/theme.png)
 
 ## 安装依赖
 
